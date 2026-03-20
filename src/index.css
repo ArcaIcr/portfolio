@@ -121,9 +121,3 @@ body {
   40% { transform: translate(2px, -1px); filter: drop-shadow(-2px 0 0 var(--color-cyber-magenta)) drop-shadow(2px 0 0 var(--color-cyber-neon)); }
   60% { transform: translate(0); filter: drop-shadow(0 0 0 transparent); }
 }
-
-@media (pointer: fine) {
-  body, a, button, .cursor-pointer, input {
-    cursor: none !important;
-  }
-}
