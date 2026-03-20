@@ -1,5 +1,6 @@
 import { Terminal, Cpu, Layout, Code2, Wifi } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { TerminalApp } from './TerminalApp';
 
 export function About() {
   const container = {
@@ -81,6 +82,8 @@ export function About() {
           <p className="text-xs text-[var(--color-cyber-text-muted)]">MQTT, WebSockets, REST</p>
         </motion.div>
       </motion.div>
+
+      <TerminalApp />
     </section>
   );
 }
