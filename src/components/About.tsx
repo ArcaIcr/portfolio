@@ -23,8 +23,8 @@ export function About() {
         viewport={{ once: true }}
         className="mb-16"
       >
-        <h2 className="text-3xl font-mono mb-6 flex items-center gap-3">
-          <Terminal className="text-[var(--color-cyber-neon)]" /> ./about-me
+        <h2 className="text-3xl font-mono mb-6 flex items-center gap-3 w-fit icon-glitch-hover">
+          <Terminal className="text-[var(--color-cyber-neon)]" /> <span className="glitch-text" data-text="./about-me">./about-me</span>
         </h2>
         <div className="grid md:grid-cols-2 gap-12 text-[var(--color-cyber-text-muted)] leading-relaxed">
           <div>

@@ -50,7 +50,7 @@ export function Projects() {
         </h2>
         
         {/* Filters */}
-        <div className="flex gap-2 font-mono text-sm">
+        <div className="flex flex-wrap gap-2 font-mono text-sm">
           {['all', 'software', 'hardware'].map((f) => (
             <button
               key={f}
@@ -80,7 +80,7 @@ export function Projects() {
               className="border border-white/10 bg-[var(--color-cyber-card)] p-8 hover:border-[var(--color-cyber-neon-dim)] transition-colors group flex flex-col"
             >
               <div className="flex justify-between items-start mb-6">
-                <div className="p-3 bg-black/50 border border-white/5 rounded-sm">
+                <div className="p-3 bg-black/50 border border-white/5 rounded-sm icon-glitch-hover transition-colors">
                   {project.icon}
                 </div>
                 <div className="flex gap-3 text-[var(--color-cyber-text-muted)]">

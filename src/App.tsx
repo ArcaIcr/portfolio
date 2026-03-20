@@ -9,7 +9,7 @@ function App() {
     <div className="min-h-screen bg-[var(--color-cyber-bg)] text-[var(--color-cyber-text)] font-sans selection:bg-[var(--color-cyber-neon)] selection:text-black pb-10">
       <Navigation />
 
-      <main className="pt-32 px-6 max-w-6xl mx-auto">
+      <main className="pt-24 md:pt-32 px-6 max-w-6xl mx-auto">
         <Hero />
         <About />
         <Projects />

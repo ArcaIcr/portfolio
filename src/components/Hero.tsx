@@ -32,10 +32,10 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight"
+        className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight"
       >
         Bridging the gap between <br className="hidden md:block"/>
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500 glitch-text" data-text="Software & Hardware.">
           Software & Hardware.
         </span>
       </motion.h1>
@@ -53,12 +53,12 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="flex gap-4"
+        className="flex flex-col sm:flex-row gap-4"
       >
-        <a href="#projects" className="flex items-center gap-2 bg-[var(--color-cyber-neon)] text-black px-6 py-3 font-semibold hover:shadow-[0_0_20px_var(--color-cyber-neon-dim)] transition-shadow">
+        <a href="#projects" className="glitch-hover flex justify-center items-center gap-2 bg-[var(--color-cyber-neon)] text-black px-6 py-3 font-semibold hover:shadow-[0_0_20px_var(--color-cyber-neon-dim)] transition-shadow">
           <Terminal size={18} /> View Projects
         </a>
-        <a href="#contact" className="flex items-center gap-2 border border-white/20 px-6 py-3 font-semibold hover:border-[var(--color-cyber-neon)] hover:text-[var(--color-cyber-neon)] transition-colors">
+        <a href="#contact" className="glitch-hover flex justify-center items-center gap-2 border border-white/20 px-6 py-3 font-semibold hover:border-[var(--color-cyber-neon)] hover:text-[var(--color-cyber-neon)] transition-colors">
           Contact Me
         </a>
       </motion.div>
