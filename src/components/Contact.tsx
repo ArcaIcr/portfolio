@@ -1,4 +1,4 @@
-import { Terminal, Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Terminal, Mail, Github, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function Contact() {
@@ -24,7 +24,7 @@ export function Contact() {
             <Mail size={20} /> Transmit Message
           </a>
 
-          <div className="flex justify-center gap-6 mt-16 pb-8 border-b border-white/10">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-16 pb-8 border-b border-white/10">
             <a href="#" className="p-3 border border-white/10 bg-[var(--color-cyber-card)] hover:border-[var(--color-cyber-neon)] hover:text-[var(--color-cyber-neon)] transition-all">
               <Github size={24} />
             </a>
@@ -33,6 +33,12 @@ export function Contact() {
             </a>
             <a href="#" className="p-3 border border-white/10 bg-[var(--color-cyber-card)] hover:border-[var(--color-cyber-neon)] hover:text-[var(--color-cyber-neon)] transition-all">
               <Twitter size={24} />
+            </a>
+            <a href="#" className="p-3 border border-white/10 bg-[var(--color-cyber-card)] hover:border-[var(--color-cyber-neon)] hover:text-[var(--color-cyber-neon)] transition-all">
+              <Facebook size={24} />
+            </a>
+            <a href="#" className="p-3 border border-white/10 bg-[var(--color-cyber-card)] hover:border-[var(--color-cyber-neon)] hover:text-[var(--color-cyber-neon)] transition-all">
+              <Instagram size={24} />
             </a>
           </div>
 

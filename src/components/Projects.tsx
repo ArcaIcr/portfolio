@@ -1,39 +1,43 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Github, ExternalLink, Cpu, Code2 } from 'lucide-react';
+import { Github, ExternalLink, Cpu, Code2, Layout, Terminal } from 'lucide-react';
 
 const projectsData = [
   {
     id: 1,
-    title: "ESP32 Smart Home Hub",
-    category: "hardware",
-    description: "Custom IoT hub built with ESP32 and MQTT, interfacing with React native frontend for seamless home automation.",
-    tech: ["C++", "ESP32", "MQTT"],
-    icon: <Cpu className="text-[var(--color-cyber-neon)]" size={24} />
+    title: "SIMs: Self-Ticketing Kiosk",
+    category: "software",
+    description: "An online food ordering and self-ticketing kiosk system designed to streamline restaurant operations and customer ordering flows.",
+    tech: ["TypeScript", "Frontend", "UI/UX"],
+    repoUrl: "https://github.com/ArcaIcr/ES_Self-Ticketing-Food-Kiosk-main",
+    icon: <Layout className="text-[var(--color-cyber-neon)]" size={24} />
   },
   {
     id: 2,
-    title: "Cyberpunk Component Lib",
+    title: "Water Quality ML",
     category: "software",
-    description: "A highly customizable React UI library featuring neon aesthetics and complex Framer Motion transitions.",
-    tech: ["React", "TS", "Framer"],
-    icon: <Code2 className="text-[var(--color-cyber-neon)]" size={24} />
-  },
-  {
-    id: 3,
-    title: "Arduino Weather Station",
-    category: "hardware",
-    description: "Solar-powered environmental logger using Arduino Nano and DHT22 sensors, sending data via LoRa.",
-    tech: ["Arduino", "C++", "LoRa"],
+    description: "Machine learning AI integration developed to process, analyze, and predict water quality metrics based on environmental datasets.",
+    tech: ["Python", "Machine Learning", "AI"],
+    repoUrl: "https://github.com/ArcaIcr/water-quality-ml",
     icon: <Cpu className="text-[var(--color-cyber-neon)]" size={24} />
   },
   {
-    id: 4,
-    title: "Minimalist E-Commerce",
+    id: 3,
+    title: "JobHunting Platform",
     category: "software",
-    description: "Full-stack headless e-commerce store built with Next.js and Stripe, focused on unparalleled loading speeds.",
-    tech: ["Next.js", "Stripe", "Prisma"],
+    description: "A dedicated job board platform connecting job seekers with employers, built with a robust backend architecture.",
+    tech: ["PHP", "Web", "Backend"],
+    repoUrl: "https://github.com/ArcaIcr/JobHunting",
     icon: <Code2 className="text-[var(--color-cyber-neon)]" size={24} />
+  },
+  {
+    id: 4,
+    title: "Banking GUI Kiosk",
+    category: "software",
+    description: "Interactive graphical user interface application simulating a secure banking kiosk transaction environment.",
+    tech: ["Python", "GUI", "Desktop"],
+    repoUrl: "https://github.com/ArcaIcr/GUI---BANKING-KIOSK",
+    icon: <Terminal className="text-[var(--color-cyber-neon)]" size={24} />
   }
 ];
 
@@ -84,8 +88,8 @@ export function Projects() {
                   {project.icon}
                 </div>
                 <div className="flex gap-3 text-[var(--color-cyber-text-muted)]">
-                  <a href="#" className="hover:text-[var(--color-cyber-neon)] transition-colors"><Github size={20} /></a>
-                  <a href="#" className="hover:text-[var(--color-cyber-neon)] transition-colors"><ExternalLink size={20} /></a>
+                  <a href={project.repoUrl} target="_blank" rel="noreferrer" className="hover:text-[var(--color-cyber-neon)] transition-colors"><Github size={20} /></a>
+                  <a href={project.repoUrl} target="_blank" rel="noreferrer" className="hover:text-[var(--color-cyber-neon)] transition-colors"><ExternalLink size={20} /></a>
                 </div>
               </div>
               
