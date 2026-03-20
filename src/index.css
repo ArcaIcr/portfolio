@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-bg: #050505;
+  --color-cyber-card: #121212;
+  --color-cyber-neon: #00F0FF;
+  --color-cyber-neon-dim: rgba(0, 240, 255, 0.2);
+  --color-cyber-text: #F3F4F6;
+  --color-cyber-text-muted: #9CA3AF;
+}
+
+:root {
+  background-color: var(--color-cyber-bg);
+  color: var(--color-cyber-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 4px;
+}
+
+::selection {
+  background: var(--color-cyber-neon);
+  color: #000;
+}
