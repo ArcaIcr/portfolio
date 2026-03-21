@@ -20,13 +20,16 @@ export function Navigation() {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 text-sm font-mono items-center text-[var(--color-cyber-text-muted)]">
-          <div className="flex items-center gap-2 mr-4 border border-white/10 px-3 py-1 bg-black/50" title="System Status: Online">
+          <div className="flex items-center gap-2 border border-white/10 px-3 py-1 bg-black/50" title="System Status: Online">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.8)]"></span>
             <span className="text-xs text-green-500">SYS_ONLINE</span>
           </div>
           <a href="#about" className="hover:text-[var(--color-cyber-neon)] transition-colors">./about</a>
           <a href="#projects" className="hover:text-[var(--color-cyber-neon)] transition-colors">./projects</a>
           <a href="#contact" className="hover:text-[var(--color-cyber-neon)] transition-colors">./contact</a>
+          <a href="/ArcaIcr_Resume.pdf" target="_blank" rel="noreferrer" className="text-[var(--color-cyber-neon)] border border-[var(--color-cyber-neon)] px-3 py-1 hover:bg-[var(--color-cyber-neon-dim)] transition-colors inline-flex items-center">
+            RESUME
+          </a>
         </div>
 
         {/* Mobile menu toggle */}
