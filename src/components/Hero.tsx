@@ -40,12 +40,12 @@ export function Hero() {
       </motion.h1>
 
       <motion.p 
+        className="text-lg md:text-xl text-[var(--color-cyber-text-muted)] max-w-2xl mb-10 leading-relaxed"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="text-xl text-[var(--color-cyber-text-muted)] max-w-2xl mb-10 leading-relaxed font-light"
       >
-        Semi Full-Stack Software Engineer & Hardware Specialist. Building sleek digital interfaces and engineering connected embedded devices.
+        I'm <strong className="text-[var(--color-cyber-text)] font-semibold">Morrix Ken Ohata</strong>, a Computer Engineering Student & Semi Full-Stack Software Engineer. Building sleek digital interfaces and engineering connected embedded devices.
       </motion.p>
 
       <motion.div 

@@ -32,7 +32,7 @@ export function TerminalApp() {
         output = 'Available commands: whoami, skills, hardware, software, clear';
         break;
       case 'whoami':
-        output = 'Software Engineer & UI/UX enthusiast bridging the gap between digital interfaces and physical hardware.';
+        output = 'Morrix Ken Ohata - Computer Engineering Student & Full-Stack Software Engineer bridging the gap between digital interfaces and physical hardware.';
         break;
       case 'skills':
         output = '[Frontend]: React, TypeScript, Tailwind, Framer Motion\n[Embedded]: Arduino, ESP32, MQTT';
